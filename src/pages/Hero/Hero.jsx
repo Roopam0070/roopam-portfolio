@@ -95,7 +95,8 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6">
               <a
-                href="#projects"
+                href="https://github.com/saijalaga/saijal-portfolio"
+                target="_blank"
                 className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#e07a5f] to-[#3d5a40] p-0.5 rounded-xl transition-all duration-300 hover:scale-105"
               >
                 <span className="block w-full px-8 py-4 rounded-[11px] bg-[#fdf6e3] transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#e07a5f] group-hover:to-[#3d5a40]">
