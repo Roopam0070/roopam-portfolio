@@ -131,7 +131,7 @@ export default function Hero() {
   skills:`}
                 </pre>
                 <div className="flex flex-wrap gap-2 my-2">
-                  {["JavaScript", "TypeScript", "React", "BitBucket", "Git", "Unity", "Cocos,C,C++,Java"].map(skill => (
+                  {["JavaScript", "TypeScript", "React", "BitBucket", "Git", "Unity", "Cocos","C","C++","Java"].map(skill => (
                     <span
                       key={skill}
                       className="px-3 py-1 rounded-md bg-[#3d5a40]/10 text-[#3d5a40] font-medium text-xs"
