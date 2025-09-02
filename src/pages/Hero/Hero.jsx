@@ -41,8 +41,8 @@ export default function Hero() {
   const words = [
     "Frontend Developer | React & TypeScript",
     "Passionate Learner & Problem Solver",
-    "Building Responsive & User-Friendly Web Apps",
-    "Exploring Full-Stack Development",
+    "Building Responsive & User-Friendly Apps",
+    "Exploring Game DevelopmentF",
   ];
 
   useEffect(() => {
@@ -131,7 +131,7 @@ export default function Hero() {
   skills:`}
                 </pre>
                 <div className="flex flex-wrap gap-2 my-2">
-                  {["JavaScript", "TypeScript", "React", "TailwindCSS", "Node.js", "Git", "Unity", "Cocos"].map(skill => (
+                  {["JavaScript", "TypeScript", "React", "BitBucket", "Git", "Unity", "Cocos,C,C++,Java"].map(skill => (
                     <span
                       key={skill}
                       className="px-3 py-1 rounded-md bg-[#3d5a40]/10 text-[#3d5a40] font-medium text-xs"
@@ -142,7 +142,8 @@ export default function Hero() {
                 </div>
                 <pre>
 {`  experience: 'Fresher',
-  qualities: ['Hard Worker','Quick Learner','Problem Solver'],
+  qualities: ['Hard Worker','Quick Learner',
+  'Problem Solver'],
 }`}
                 </pre>
               </div>

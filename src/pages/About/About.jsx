@@ -10,7 +10,7 @@ export default function About() {
 
         <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
           {/* Profile Image */}
-          <div className="relative mb-6 sm:mb-0">
+          {/* <div className="relative mb-6 sm:mb-0">
             <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-[#e07a5f]/20 to-transparent">
               <img
                 src={HeroImg}
@@ -20,7 +20,7 @@ export default function About() {
                 height={929}
               />
             </div>
-          </div>
+          </div> */}
 
           {/* About Text */}
           <div className="relative space-y-6">
