@@ -42,7 +42,7 @@ export default function Header() {
 
         {/* Navigation */}
         <nav
-          className={`flex flex-col md:flex-row md:items-center gap-2 absolute md:static top-full left-0 w-full md:w-auto bg-[#fdf6e3]/95 md:bg-transparent overflow-hidden transition-all duration-300 ${
+          className={`flex flex-col md:flex-row md:items-center gap-2 absolute md:static top-full left-0 w-full md:w-auto bg-pink-100  overflow-hidden transition-all duration-300 ${
             isMenuOpen ? "max-h-96 py-2" : "max-h-0 md:max-h-full"
           }`}
         >
@@ -54,7 +54,7 @@ export default function Header() {
                 setActiveLink(id);
                 setIsMenuOpen(false);
               }}
-              className={`flex items-center gap-2 px-4 py-2 md:px-3 md:py-1 font-medium relative transition-colors duration-300 text-[#3d5a40] hover:text-pink-600`}
+              className={`flex items-center gap-2 px-4 py-2 md:px-3 md:py-1 font-medium relative transition-colors duration-300 text-gray-600 hover:text-pink-600`}
             >
               <Icon />
               <span>{text}</span>
