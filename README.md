@@ -1,4 +1,4 @@
-# Saijal Agarwal's Portfolio ✨
+# Roopam Gupta's Portfolio ✨
 
 Welcome to the code behind my personal portfolio! This is where I showcase my journey as a developer, my projects, and my skills. I'm excited to share it with you!
 
@@ -40,5 +40,5 @@ To get a local copy up and running, follow these simple steps.
 
 ## ❤️ Thank You!
 
-Thanks for checking out my portfolio. I hope you enjoy it! If you have any questions or just want to connect, feel free to reach out at **saijalagarwal18@gmail.com** or connect via my GitHub profile [here](https://github.com/Saijalagarwal).
+Thanks for checking out my portfolio. I hope you enjoy it! If you have any questions or just want to connect, feel free to reach out at **roopam0070@gmail.com** or connect via my GitHub profile [here](https://github.com/Roopam0070).
 # roopam-portfolio
