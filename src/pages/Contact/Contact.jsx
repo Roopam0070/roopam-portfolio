@@ -58,7 +58,7 @@ export default function Contact() {
         {[...Array(25)].map((_, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 rounded-full bg-teal-300/20"
+            className="absolute w-2 h-2 rounded-full bg-pink-100"
             initial={{ y: "-10%", x: "-10%" }}
             animate={{ y: ["-10%", "110%"], x: ["-10%", "110%"] }}
             transition={{ duration: 20 + Math.random() * 10, repeat: Infinity, delay: Math.random() * 5 }}
@@ -68,14 +68,14 @@ export default function Contact() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#EDE8DC]/30 via-[#C2B280]/20 to-[#F5F0E1]/10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-pink-100/60 via-pink-100 to-pink-200/70" />
       </div>
 
       <section className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Contact Info */}
           <div className="space-y-8">
-            <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-[#C2B280] leading-tight">
+            <h2 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-gray-400 to-gray-500 leading-tight">
               Get in Touch
             </h2>
             <p className="text-gray-700 text-lg">
@@ -83,14 +83,14 @@ export default function Contact() {
             </p>
 
             <div className="space-y-6">
-              <ContactBlock icon={<Mail className="w-6 h-6 text-teal-400" />} title="Email" text="saijalagarwal18@gmail.com" />
-              <ContactBlock icon={<MapPin className="w-6 h-6 text-cyan-400" />} title="Location" text="Noida 201301, India" />
-              <ContactBlock icon={<Linkedin className="w-6 h-6 text-blue-400" />} title="LinkedIn" text="saijal-agarwal" link="https://www.linkedin.com/in/saijal-agarwal-821412213/" />
+              <ContactBlock icon={<Mail className="w-6 h-6 text-gray-400" />} title="Email" text="roopam0070@gmail.com" />
+              <ContactBlock icon={<MapPin className="w-6 h-6 text-gray-400" />} title="Location" text="Chhattarpur, New Delhi" />
+              <ContactBlock icon={<Linkedin className="w-6 h-6 text-gray-400" />} title="LinkedIn" text="roopam-gupta" link="https://www.linkedin.com/in/roopam-gupta-9789a6185/" />
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="backdrop-blur-lg bg-white/5 border border-[#C2B280]/30 p-8 rounded-2xl shadow-xl relative z-10">
+          <div className="backdrop-blur-lg bg-white/5 border border-gray-300 p-8 rounded-2xl shadow-xl relative z-10">
             <form onSubmit={handleSubmit} className="space-y-6">
               <InputField label="Your Name" value={formData.name} error={errors.name} onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
               <InputField label="Your Email" value={formData.email} error={errors.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
@@ -99,7 +99,7 @@ export default function Contact() {
 
               <motion.button
                 type="submit"
-                className="w-full bg-gradient-to-r from-teal-400 to-[#C2B280] text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-gray-400 to-gray-500 text-white py-3 px-6 rounded-lg font-semibold flex items-center justify-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
@@ -128,7 +128,7 @@ function ContactBlock({ icon, title, text, link }) {
       <div>
         <h3 className="font-semibold">{title}</h3>
         {link ? (
-          <a href={link} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-400 underline">{text}</a>
+          <a href={link} target="_blank" rel="noopener noreferrer" className="text-gray-600 underline">{text}</a>
         ) : (
           <p className="text-gray-600">{text}</p>
         )}
@@ -145,7 +145,7 @@ function InputField({ label, value, error, onChange }) {
         placeholder={label}
         value={value}
         onChange={onChange}
-        className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${error ? "border-red-500" : "border-gray-400"} focus:border-teal-400 focus:outline-none transition-colors`}
+        className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${error ? "border-red-500" : "border-gray-400"} focus:border-pink-400 focus:outline-none transition-colors`}
       />
       {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
     </div>
@@ -160,7 +160,7 @@ function TextareaField({ label, value, error, onChange }) {
         placeholder={label}
         value={value}
         onChange={onChange}
-        className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${error ? "border-red-500" : "border-gray-400"} focus:border-teal-400 focus:outline-none transition-colors resize-none`}
+        className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${error ? "border-red-500" : "border-gray-400"} focus:border-pink-400 focus:outline-none transition-colors resize-none`}
       />
       {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
     </div>

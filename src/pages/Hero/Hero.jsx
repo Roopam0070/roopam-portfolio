@@ -8,7 +8,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import { motion } from "framer-motion";
 
 // --- Floating Circles Background ---
-const FloatingCircles = ({ colors = ["#e07a5f", "#3d5a40", "#C2B280"] }) => {
+const FloatingCircles = ({ colors = ["#d8a4ff", "#6b21a8", "#f9a8d4"] }) => {
   return (
     <>
       {Array.from({ length: 20 }).map((_, i) => (
@@ -39,10 +39,9 @@ const FloatingCircles = ({ colors = ["#e07a5f", "#3d5a40", "#C2B280"] }) => {
 
 export default function Hero() {
   const words = [
-    "Frontend Developer | React & TypeScript",
+    "Frontend Developer | UI/UX",
     "Passionate Learner & Problem Solver",
-    "Building Responsive & User-Friendly Apps",
-    "Exploring Game DevelopmentF",
+    "Building Responsive & User-Friendly Web Applications",
   ];
 
   useEffect(() => {
@@ -50,7 +49,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <main className="bg-[#fdf6e3] text-[#2c2c2c] min-h-screen relative overflow-hidden font-sans">
+    <main className="bg-pink-100 text-pink-900 min-h-screen relative overflow-hidden font-sans">
       {/* Animated Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <FloatingCircles />
@@ -62,9 +61,9 @@ export default function Hero() {
           {/* Left Column */}
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0 relative">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-[#e07a5f]/20 backdrop-blur-sm border border-[#e07a5f]/30 mb-6 sm:mb-8">
-              <div className="w-2 h-2 rounded-full bg-[#e07a5f] animate-pulse"></div>
-              <span className="text-sm font-medium">Welcome to my portfolio</span>
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-pink-200 backdrop-blur-sm border border-pink-300 mb-6 sm:mb-8">
+              <div className="w-2 h-2 rounded-full bg-pink-200 animate-pulse "></div>
+              <span className="text-sm font-medium text-pink-800">Welcome to my portfolio</span>
             </div>
 
             {/* Heading */}
@@ -72,47 +71,47 @@ export default function Hero() {
               <SparklesText text="Hello" />
               <span className="relative inline-block">
                 I&apos;m{" "}
-                <span className="typing-effect" style={{ color: "#3d5a40", fontWeight: 700 }}>
-                  SAIJAL AGARWAL
+                <span className="typing-effect text-gray-600" style={{ fontWeight: 700 }}>
+                  ROOPAM GUPTA
                 </span>
               </span>
             </h1>
 
             {/* Role */}
-            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-gradient-to-r from-[#e07a5f]/20 to-[#C2B280]/20 border border-[#e07a5f]/30 mb-8 backdrop-blur-sm">
-              <i className="fas fa-rocket text-[#e07a5f] animate-bounce"></i>
+            <div className="inline-flex items-center gap-3 px-6 py-3 rounded-xl bg-gradient-to-r from-pink-200/20  to-pink-300/20 border border-pink-300 mb-8 backdrop-blur-sm">
+              <i className="fas fa-rocket bg-pink-200 animate-bounce"></i>
               <FlipWords
-                className={"text-lg sm:text-xl font-medium text-[#3d5a40]"}
+                className={"text-lg sm:text-xl font-medium text-pink-700"}
                 words={words}
               />
             </div>
 
             {/* Short Description */}
-            <p className="text-base sm:text-xl text-[#2c2c2c]/80 mb-12">
-              Frontend Developer | JavaScript | React | TypeScript | Unity | Cocos
+            <p className="text-base sm:text-xl text-pink-800/80 mb-12">
+              Frontend Developer | React | JavaScript | TypeScript | Cocos 
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6">
               <a
-                href="https://github.com/saijalaga/saijal-portfolio"
+                href="https://github.com/Roopam0070/roopam-portfolio"
                 target="_blank"
-                className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#e07a5f] to-[#3d5a40] p-0.5 rounded-xl transition-all duration-300 hover:scale-105"
+                className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-pink-400 to-pink-500 transition-all duration-300 hover:scale-105"
               >
-                <span className="block w-full px-8 py-4 rounded-[11px] bg-[#fdf6e3] transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#e07a5f] group-hover:to-[#3d5a40]">
-                  <span className="flex items-center justify-center gap-2 text-[#2c2c2c] font-medium group-hover:text-white">
+                <span className="block w-full px-8 py-4 rounded-[11px]  bg-pink-200 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-pink-300 group-hover:to-pink-400">
+                  <span className="flex items-center justify-center gap-2 text-pink-800 font-medium group-hover:text-white">
                     View Projects <i className="fas fa-arrow-right"></i>
                   </span>
                 </span>
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1u32yqS6ANeGk0_jOZ7yUg-tBBORmFQIY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1RMUb1_DplpSEOpQRB7xZ0TUz2Ck9DSN_/view?usp=sharing"
                 target="_blank"
-                className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-[#e07a5f]/60 to-[#3d5a40]/60 transition-all duration-300 hover:scale-105"
+                className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-pink-400 to-pink-500 transition-all duration-300 hover:scale-105"
               >
-                <span className="block w-full px-8 py-4 rounded-[11px] bg-[#fdf6e3] border border-[#3d5a40]/30 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-[#e07a5f] group-hover:to-[#3d5a40]">
-                  <span className="flex items-center justify-center gap-2 text-[#2c2c2c] font-medium group-hover:text-white">
+                <span className="block w-full px-8 py-4 rounded-[11px]  bg-pink-200 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-pink-300 group-hover:to-pink-400">
+                  <span className="flex items-center justify-center gap-2 text-pink-800 font-medium group-hover:text-white">
                     Get Resume <i className="fas fa-envelope"></i>
                   </span>
                 </span>
@@ -122,29 +121,29 @@ export default function Hero() {
 
           {/* Right Column - Profile Code */}
           <div className="w-full lg:w-1/2">
-            <div className="rounded-2xl shadow-xl bg-[#f5f0e1] p-6 border border-[#C2B280]/40">
-              <h3 className="text-lg font-semibold text-[#3d5a40] mb-4">My Profile</h3>
-              <div className="text-sm leading-relaxed font-mono text-[#2c2c2c]">
+            <div className="rounded-2xl shadow-xl bg-pink-400/10 p-6 border border-pink-400/20">
+              <h3 className="text-lg font-semibold text-pink-700/60 mb-4">My Profile</h3>
+              <div className="text-sm leading-relaxed font-mono text-pink-900">
                 <pre>
-{`const profile = {
-  name: 'Saijal Agarwal',
-  role: 'Frontend Developer',
-  skills:`}
+                {`const profile = {
+                  name: 'Roopam Gupta',
+                  role: 'Frontend Developer',
+                  skills:`}
                 </pre>
                 <div className="flex flex-wrap gap-2 my-2">
-                  {["JavaScript", "TypeScript", "React", "BitBucket", "Git", "Unity", "Cocos","C","C++","Java"].map(skill => (
+                  {["React.js", "JavaScript", "TypeScript", "HTML", "CSS", "Redux", "BitBucket", "Git", "Cocos", "Figma"].map(skill => (
                     <span
                       key={skill}
-                      className="px-3 py-1 rounded-md bg-[#3d5a40]/10 text-[#3d5a40] font-medium text-xs"
+                      className="px-3 py-1 rounded-md bg-gray-400/40 text-gray-800 font-medium text-xs"
                     >
                       {skill}
                     </span>
                   ))}
                 </div>
-                <pre>
-{`  experience: 'Fresher',
-  qualities: ['Hard Worker','Quick Learner',
-  'Problem Solver'],
+                <pre className="flex flex-wrap">
+{`  experience: '3 Years',
+  qualities: ['Hard Worker', 'Quick Learner', 'Problem Solver', 
+  'Collaborative Team Player', 'Detail-Oriented']
 }`}
                 </pre>
               </div>
@@ -156,9 +155,9 @@ export default function Hero() {
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
         <span className="text-[#3d5a40] text-sm flex items-center gap-2">
-          <i className="fas fa-mouse text-[#e07a5f]"></i> About me
+          <i className="fas fa-mouse text-gray-800"></i> About me
         </span>
-        <i className="fas fa-chevron-down text-[#e07a5f] text-xl"></i>
+        <i className="fas fa-chevron-down text-gray-800 text-xl"></i>
       </div>
 
       <PortfolioPage />

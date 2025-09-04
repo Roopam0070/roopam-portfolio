@@ -3,16 +3,11 @@ import IconCloud from "./ui/icon-cloud";
 const slugs = [
   "typescript",
   "javascript",
-  "dart",
   "java",
   "react",
-  "flutter",
   "android",
   "html5",
   "css3",
-  "nodedotjs",
-  "express",
-  "nextdotjs",
   "prisma",
   "amazonaws",
   "postgresql",
@@ -29,13 +24,12 @@ const slugs = [
   "gitlab",
   "visualstudiocode",
   "androidstudio",
-  "sonarqube",
   "figma",
 ];
 
 function IconCloudDemo() {
   return (
-    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg  px-20 pb-20 pt-8 bg-transparent">
+    <div className="relative flex w-[400px] h-[400px] items-center justify-center overflow-hidden rounded-lg bg-transparent">
       <IconCloud iconSlugs={slugs} />
     </div>
   );

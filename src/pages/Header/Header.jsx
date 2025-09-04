@@ -25,16 +25,16 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-[#fdf6e3]/50 shadow-md">
-      <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-pink-100 shadow-md">
+      <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 float-right">
         {/* Logo */}
-        <Link to="/" className="text-[#e07a5f] font-bold text-xl hover:text-[#3d5a40] transition-colors">
-          Saijal
-        </Link>
+        {/* <Link to="/" className="text-[#e07a5f] font-bold text-xl hover:text-[#3d5a40] transition-colors float-left">
+          Roopam
+        </Link> */}
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-[#3d5a40] text-2xl"
+          className="md:hidden text-gray-800 text-2xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <FaBars />
@@ -54,13 +54,13 @@ export default function Header() {
                 setActiveLink(id);
                 setIsMenuOpen(false);
               }}
-              className={`flex items-center gap-2 px-4 py-2 md:px-3 md:py-1 font-medium relative transition-colors duration-300 text-[#3d5a40] hover:text-[#e07a5f]`}
+              className={`flex items-center gap-2 px-4 py-2 md:px-3 md:py-1 font-medium relative transition-colors duration-300 text-[#3d5a40] hover:text-pink-600`}
             >
               <Icon />
               <span>{text}</span>
               {/* Sliding underline for active link */}
               {activeLink === id && (
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#e07a5f] animate-slideUnderline"></span>
+                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-pink-600 animate-slideUnderline"></span>
               )}
             </Link>
           ))}
