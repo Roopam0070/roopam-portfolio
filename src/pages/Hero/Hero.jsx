@@ -126,9 +126,9 @@ export default function Hero() {
               <div className="text-sm leading-relaxed font-mono text-pink-900">
                 <pre  className="whitespace-pre-wrap break-words text-sm sm:text-base p-2">
                 {`const profile = {
-                  name: 'Roopam Gupta',
-                  role: 'Frontend Developer',
-                  skills:`}
+name: 'Roopam Gupta',
+role: 'Frontend Developer',
+skills:`}
                 </pre>
                 <div className="flex flex-wrap gap-2 my-2">
                   {["React.js", "JavaScript", "TypeScript", "HTML", "CSS", "Redux", "BitBucket", "Git", "Cocos", "Figma"].map(skill => (
