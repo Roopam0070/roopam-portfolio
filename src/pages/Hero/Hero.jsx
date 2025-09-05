@@ -62,7 +62,7 @@ export default function Hero() {
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0 relative">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-pink-200 backdrop-blur-sm border border-pink-300 mb-6 sm:mb-8">
-              <div className="w-2 h-2 rounded-full bg-pink-200 animate-pulse "></div>
+              <div className="w-2 h-2 rounded-full bg-pink-500 animate-pulse "></div>
               <span className="text-sm font-medium text-pink-800">Welcome to my portfolio</span>
             </div>
 
@@ -71,7 +71,7 @@ export default function Hero() {
               <SparklesText text="Hello" />
               <span className="relative inline-block">
                 I&apos;m{" "}
-                <span className="typing-effect text-gray-600" style={{ fontWeight: 700 }}>
+                <span className="text-gray-600" style={{ fontWeight: 700 }}>
                   ROOPAM GUPTA
                 </span>
               </span>
@@ -124,7 +124,7 @@ export default function Hero() {
             <div className="rounded-2xl shadow-xl bg-pink-400/10 p-6 border border-pink-400/20">
               <h3 className="text-lg font-semibold text-pink-700/60 mb-4">My Profile</h3>
               <div className="text-sm leading-relaxed font-mono text-pink-900">
-                <pre>
+                <pre  className="whitespace-pre-wrap break-words text-sm sm:text-base p-2">
                 {`const profile = {
                   name: 'Roopam Gupta',
                   role: 'Frontend Developer',
@@ -140,11 +140,11 @@ export default function Hero() {
                     </span>
                   ))}
                 </div>
-                <pre className="flex flex-wrap">
-{`  experience: '3 Years',
-  qualities: ['Hard Worker', 'Quick Learner', 'Problem Solver', 
-  'Collaborative Team Player', 'Detail-Oriented']
-}`}
+                <pre className="whitespace-pre-wrap break-words text-sm sm:text-base p-2">
+                  {`experience: '3 Years',
+qualities: ['Hard Worker', 'Quick Learner', 'Problem Solver', 'Collaborative Team Player', 'Detail-Oriented']
+}`
+                  }
                 </pre>
               </div>
             </div>
