@@ -153,12 +153,12 @@ qualities: ['Hard Worker', 'Quick Learner', 'Problem Solver', 'Collaborative Tea
       </section>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
-        <span className="text-[#3d5a40] text-sm flex items-center gap-2">
-          <i className="fas fa-mouse text-gray-800"></i> About me
+      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
+        <span className="text-pink-600 text-sm flex items-center gap-2">
+          <i className="fas fa-mouse text-gray-800 "></i> About me
         </span>
         <i className="fas fa-chevron-down text-gray-800 text-xl"></i>
-      </div>
+      </div> */}
 
       <PortfolioPage />
     </main>

@@ -25,7 +25,7 @@ const SkillCard = ({ icon: Icon, title, skills, color, animate }) => (
           <div key={index}>
             <Badge
               variant="outline"
-              className="group/badge relative bg-pink-200 hover:bg-[#EDE8DC]/50 text-gray-400 border-gray-400 flex items-center gap-2 py-2 px-3 transition-all duration-300 hover:scale-105 hover:shadow-sm hover:shadow-pink-300/20"
+              className="group/badge relative bg-pink-200 hover:bg-pink-300/50 text-gray-500 border-gray-400 flex items-center gap-2 py-2 px-3 transition-all duration-300 hover:scale-105 hover:shadow-sm hover:shadow-pink-300/20"
             >
               <span className="transform group-hover/badge:scale-110 transition-transform duration-300">{skill.icon}</span>
               <span className="font-medium">{skill.name}</span>
@@ -110,7 +110,7 @@ const SkillsSection = () => {
       color: "text-blue-400",
       skills: [
         { name: "Cocos", icon: <SiUnity className="w-4 h-4" />, level: 90, levelColor: "bg-blue-400" },
-        { name: "Unity", icon: <SiUnity className="w-4 h-4" />, level: 50, levelColor: "bg-blue-400" },
+        { name: "Unity", icon: <SiUnity className="w-4 h-4" />, level: 55, levelColor: "bg-blue-400" },
       ],
     },
   ];

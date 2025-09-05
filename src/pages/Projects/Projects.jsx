@@ -14,7 +14,7 @@ const projects = [
     title: "Game Development Experience",
     description:
       "Collaborated with design, development and testing teams to create optimized game mechanics and engaging experiences using Cocos2d. Wrote clean, maintainable code in TypeScript and JavaScript.",
-    tech: ["Cocos", "TypeScript", "HTML", "CSS"],
+    tech: ["Cocos", "TypeScript", "HTML", "CSS", "Android Studio", "XCode"],
     githubLink: "",
     color: "#6B6B6B",
   },
