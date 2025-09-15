@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
 
 const projects = [
   {
@@ -8,6 +9,15 @@ const projects = [
       "My portfolio showcasing my skills, projects, and work experience, built with React, TailwindCSS, and Framer Motion.",
     tech: ["React", "TailwindCSS", "Framer Motion"],
     githubLink: "https://github.com/Roopam0070/roopam-portfolio",
+    color: "#6B6B6B",
+  },
+  {
+    title: "Recipe Finder",
+    description:
+      "Built a Recipe Finder app in React that showcases API integration and frontend state management. Implemented a search functionality, optimized rendering for fast response times, and enhanced UX with loading states and validation. Deployed on GitHub Pages/Vercel for live access.",
+    tech: ["React", "JavaScript (ES6+)", "REST API"],
+    githubLink: "https://github.com/Roopam0070/Recipe-Finder",
+    vercelAppLink: "https://recipe-finder-peach-one.vercel.app/",
     color: "#6B6B6B",
   },
   {
@@ -80,6 +90,16 @@ export default function Projects() {
                 className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:underline"
               >
                 <FaGithub /> View Code
+              </a>
+            )}
+            {project.vercelAppLink && (
+              <a
+                href={project.vercelAppLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:underline"
+              >
+                <SiVercel /> View Project
               </a>
             )}
           </div>
