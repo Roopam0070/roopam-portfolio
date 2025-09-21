@@ -69,6 +69,7 @@ const SkillsSection = () => {
         { name: "JavaScript", icon: <SiJavascript className="w-4 h-4" />, level: 85, levelColor: "bg-teal-400" },
         { name: "TypeScript", icon: <SiTypescript className="w-4 h-4" />, level: 85, levelColor: "bg-[#3178C6]" },
         { name: "React.js", icon: <FaReact className="w-4 h-4 text-[#3178C6" />, level: 85, levelColor: "bg-[#3178C6]" },
+        { name: "Next.js", icon: <FaReact className="w-4 h-4 text-[#3178C6" />, level: 75, levelColor: "bg-[#3178C6]" },
       ],
     },
     {

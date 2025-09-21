@@ -12,6 +12,14 @@ const projects = [
     color: "#6B6B6B",
   },
   {
+    title: "CodesWear",
+    description:
+      "CodesWear is a full-stack e-commerce web application where users can browse products, add items to the cart, and securely checkout. Built with modern web technologies, it demonstrates skills in frontend development, backend APIs, and database integration.",
+    tech: ["Next.js", "TailwindCSS", "MongoDB", "JWT Authentication"],
+    githubLink: "https://github.com/Roopam0070/codeswear",
+    color: "#6B6B6B",
+  },
+  {
     title: "Recipe Finder",
     description:
       "Built a Recipe Finder app in React that showcases API integration and frontend state management. Implemented a search functionality, optimized rendering for fast response times, and enhanced UX with loading states and validation. Deployed on GitHub Pages/Vercel for live access.",

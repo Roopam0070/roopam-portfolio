@@ -88,7 +88,7 @@ export default function Hero() {
 
             {/* Short Description */}
             <p className="text-base sm:text-xl text-pink-800/80 mb-12">
-              Frontend Developer | React | JavaScript | TypeScript | Cocos 
+              Frontend Developer | React | Next | JavaScript | TypeScript | Cocos 
             </p>
 
             {/* CTA Buttons */}
@@ -131,7 +131,7 @@ role: 'Frontend Developer',
 skills:`}
                 </pre>
                 <div className="flex flex-wrap gap-2 my-2">
-                  {["React.js", "JavaScript", "TypeScript", "HTML", "CSS", "Redux", "BitBucket", "Git", "Cocos", "Figma"].map(skill => (
+                  {["React.js", "Next.js", "JavaScript", "TypeScript", "HTML", "CSS", "Redux", "BitBucket", "Git", "Cocos", "Figma"].map(skill => (
                     <span
                       key={skill}
                       className="px-3 py-1 rounded-md bg-gray-400/40 text-gray-800 font-medium text-xs"
