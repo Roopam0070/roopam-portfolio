@@ -94,7 +94,7 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6">
               <a
-                href="https://github.com/Roopam0070/roopam-portfolio"
+                href="https://roopam-portfolio.vercel.app/projects"
                 target="_blank"
                 className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-pink-400 to-pink-500 transition-all duration-300 hover:scale-105"
               >
