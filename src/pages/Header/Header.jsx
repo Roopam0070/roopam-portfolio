@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   FaHome,
   FaLaptopCode,
@@ -23,7 +23,10 @@ export default function Header() {
     { id: "projects", icon: FaLaptopCode, text: "Projects", path: "/projects" },
     { id: "contact", icon: FaEnvelope, text: "Contact", path: "/contact" },
   ];
-
+  useEffect(() => {
+    const current = navLinks.find(link => link.path === location.pathname);
+    setActiveLink(current ? current.id : "home");
+  }, [location.pathname]);
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-pink-100 shadow-md">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4 float-right">

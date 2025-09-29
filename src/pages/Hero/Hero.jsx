@@ -6,7 +6,7 @@ import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 // --- Floating Circles Background ---
 const FloatingCircles = ({ colors = ["#d8a4ff", "#6b21a8", "#f9a8d4"] }) => {
   return (
@@ -93,9 +93,8 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6">
-              <a
-                href="https://roopam-portfolio.vercel.app/projects"
-                target="_blank"
+              <Link
+                to="/projects"
                 className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-pink-400 to-pink-500 transition-all duration-300 hover:scale-105"
               >
                 <span className="block w-full px-8 py-4 rounded-[11px]  bg-pink-200 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-pink-300 group-hover:to-pink-400">
@@ -103,7 +102,7 @@ export default function Hero() {
                     View Projects <i className="fas fa-arrow-right"></i>
                   </span>
                 </span>
-              </a>
+              </Link>
 
               <a
                 href="https://drive.google.com/file/d/1jU0wvyUc0vdRoiofbzZVTCDPPvWrjOi1/view?usp=sharing"
