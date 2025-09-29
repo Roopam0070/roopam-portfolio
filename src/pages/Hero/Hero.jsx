@@ -106,7 +106,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1pwJncwtvCTjdwQP4U2atgHYLsWpPednn/view?usp=sharing"
+                href="https://drive.google.com/file/d/1jU0wvyUc0vdRoiofbzZVTCDPPvWrjOi1/view?usp=sharing"
                 target="_blank"
                 className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-pink-400 to-pink-500 transition-all duration-300 hover:scale-105"
               >
