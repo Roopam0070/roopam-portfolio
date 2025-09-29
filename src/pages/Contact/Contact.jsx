@@ -31,7 +31,7 @@ export default function Contact() {
     if (!validateForm()) { setStatus("Please fill in all required fields correctly."); return; }
 
     const form = new FormData();
-    form.append("access_key", "61427a63-b4ee-4b65-805f-d228519ed1af");
+    form.append("access_key", "aba96463-6d0d-43ba-947d-99adf8a3f442");
     form.append("name", formData.name);
     form.append("email", formData.email);
     form.append("subject", formData.subject || "New Contact Form Submission");
